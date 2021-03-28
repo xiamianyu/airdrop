@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/blue">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+        
+        <CheckBox
+            android:id="@+id/main_cb_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:padding="16dp"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+    
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+        
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/main_slyt_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                
+                <RelativeLayout
+                    android:id="@+id/main_rlyt_select_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:visibility="gone">
+                    
+                    <CheckBox
+                        android:id="@+id/main_cb_select_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/select_all"/>
+                    
+                    <TextView
+                        android:id="@+id/main_tv_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:enabled="false"
+                        android:padding="16dp"
+                        android:text="@string/delete"/>
+                </RelativeLayout>
+                
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/main_rlv_apk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/item_recyclerview_apk"/>
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/main_btn_wlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:backgroundTint="@color/wine_red"
+            app:fabSize="mini"
+            app:rippleColor="@color/light_red"
+            app:srcCompat="@drawable/ic_wifi"/>
+    </FrameLayout>
+</LinearLayout>
+

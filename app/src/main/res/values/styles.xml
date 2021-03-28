@@ -1,0 +1,13 @@
+<resources>
+    
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/blue</item> <!-- statusbar -->
+        <item name="android:windowBackground">@color/light_white</item>
+    </style>
+    
+    <style name="OverFlowMenuTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="overlapAnchor">false</item>
+    </style>
+</resources>

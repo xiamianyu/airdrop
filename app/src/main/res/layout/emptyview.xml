@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-64dp"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/ic_coffee"
+        android:text="@string/emptyview_tips"
+        android:textSize="16sp"
+        android:textStyle="italic"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/emptyview_tutorial"/>
+
+</LinearLayout>

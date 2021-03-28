@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Airdrop</string>
+    <string name="select_all">全选</string>
+    <string name="delete_apk">要删除此安装包吗？\n\n安装包路径：</string>
+    <string name="delete_apks">要删除选择的安装包吗？</string>
+    <string name="cancel">取消</string>
+    <string name="submit">确定</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="item_apk_tv_install">安装</string>
+    <string name="item_apk_tv_uninstall">卸载</string>
+    <string name="item_apk_tv_version">版本：%1$s</string>
+    <string name="item_apk_tv_channel">渠道：%1$s</string>
+    <string name="item_apk_tv_size">大小：%1$s</string>
+    <string name="item_apk_tv_apk_name">安装包：%1$s</string>
+    <string name="airdrop_tips">请在电脑浏览器地址栏输入</string>
+    <string name="airdrop_title">WLAN 服务已开启</string>
+    <string name="airdrop_url">http://%1$s:%2$d</string>
+    <string name="airdrop_wifi_connecting">正在连接...</string>
+    <string name="airdrop_wifi_disconnected">WiFi 未连接</string>
+    <string name="emptyview_tips">矮油，不错哦！</string>
+    <string name="emptyview_tutorial">
+        if (你已知悉教程) {\n
+        \t\t\t\t结束。\n
+        } else {\n
+        \t\t\t\t1.电脑和手机连接同一网段的网络；\n
+        \t\t\t\t2.点击 App 右下角的 WiFi 按钮查看 WLAN 地址；\n
+        \t\t\t\t3.在电脑浏览器地址栏输入 WLAN 地址。\n
+        }
+    </string>
+</resources>
